@@ -1,6 +1,5 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    padding-top: 80px;
     background-color: #f8f8f8;
 }
 
@@ -56,6 +55,13 @@ body {
 #bienvenue {
   height: 300px;
   background-color: #0c518a;
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 768px){ /* On cache le menu pour les mobiles et petits périphériques */
+  #bienvenue {
+    padding-top: 0px;
+  }
 }
 
 #actualites {
