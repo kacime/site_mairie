@@ -3,7 +3,6 @@ body {
     background-color: #f8f8f8;
 }
 
-
 /* NAVBAR STYLE */
 
 
@@ -14,6 +13,7 @@ body {
 .navbar-default .navbar-brand {
   font-size: 3em;
 }
+
 
 
 /* ADDED PADDING IN NAVBAR */
@@ -27,7 +27,7 @@ body {
 }
 
 
-/* CLASS FOR REMOVING PADDING IN NAVBAR*/
+/* CLASS FOR REMOVING PADDING IN NAVBAR */
 
 
 .navbar-pad-original {
@@ -52,29 +52,23 @@ body {
   border-color: #e7e7e7;
 }
 
-#bienvenue {
-  height: 300px;
-  background-color: #0c518a;
-  padding-top: 80px;
-}
 
-@media screen and (min-width: 768px){ /* On cache le menu pour les mobiles et petits périphériques */
-  #bienvenue {
-    padding-top: 0px;
+@media screen and (max-width: 767px){ /* On cache le menu pour les mobiles et petits périphériques */
+  .bloc:first-of-type {
+    padding-top: 30px;
   }
 }
 
-#actualites {
-  height: 300px;
-  background-color: white;
+
+/* BLOCS TEXTES */
+
+.bloc {
+  margin: 40px 0;
+  border-bottom: 1px dotted grey;
+  padding-bottom: 40px;
 }
 
-#photos {
-  height: 300px;
-  background-color: #df225a;
-}
-
-.test {
-  background-color: yellow;
-  height: 300px;
+.bloc-texte {
+  letter-spacing: -1px;
+  font-size: 50px;
 }
