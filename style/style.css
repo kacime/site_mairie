@@ -3,75 +3,12 @@ body {
     background-color: #f8f8f8;
 }
 
-.vert {
-  background-color: #8d9683;
-}
 
-.mauve {
-  background-color: #b1877b;
-}
-
-
-.bloclien
-{
-  background-color: #CCCCCC;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.hvr-fade {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-  -webkit-transition-duration: 0.6s;
-  transition-duration: 0.6s;
-  -webkit-transition-property: color, background-color;
-  transition-property: color, background-color;
-}
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #f0ad4e;
-  color: white;
-}
-
-.bloc {
-  padding-top: 5px;
-  padding-bottom: 20px;
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 992px) { 
-    .vcenter {
-        display: flex;
-        align-items: center;  
-    }
-    .bloc {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-}
-/* NAVBAR STYLE */
-
-
-.navbar-default .navbar-nav > li > a {
-
-}
+/* NAVBAR , gestion des styles et de l'effet*/
 
 .navbar-default .navbar-brand {
   font-size: 3em;
 }
-
-
-
-/* ADDED PADDING IN NAVBAR */
-
 
 .navbar {
     padding:15px;
@@ -80,10 +17,6 @@ body {
         transition: background .8s ease-out,padding .8s ease-out;
 }
 
-
-/* CLASS FOR REMOVING PADDING IN NAVBAR */
-
-
 .navbar-pad-original {
       padding:0px;
 }
@@ -91,8 +24,6 @@ body {
 .navbar a {
   margin-right: 5px;
 }
-
-
 
 .navbar-default .navbar-nav .active a,
 .navbar-default .navbar-nav .active a:hover,
@@ -106,38 +37,54 @@ body {
   background-color: #f8f8f8;
 }
 
-.btn-primary, .btn-primary:hover	 {
+/* Ajout d'un padding en mode mobile pour que le texte ne soit pas caché par le menu fixe */
 
+@media screen and (max-width: 767px){ 
+   .premierbloc{
+     padding-top: 70px;
+    }
+}
+
+/* BLOC -> Créaton d'une fonction bloc pour gérer les espaces, j'aurais pu utiliser .container,
+mais plusieurs blocs peuvent se trouver dans un container */
+
+.bloc {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+/* A partir des écrans medium et plus, on centre verticalement blocs liens et textes, et les marges entre
+les blocs sont plus grandes */
+@media (min-width: 992px) { 
+    .vcenter {
+        display: flex;
+        align-items: center;  
+    }
+    .bloc {
+  padding-top: 40px;
+  padding-bottom: 50px;
+	}
+}
+
+/* Style pour les blocs de liens dans l'accueil */
+
+.bloc-lien
+{
+  background-color: #CCCCCC;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 
-/* BLOCS TEXTES */
+/* Titres des différents blocs */
 
-
-
-.bloc-texte {
+.titre-bloc {
   letter-spacing: -1px;
   font-size: 3em;
   margin-bottom: 20px;
   padding-left: 30px;
   border-left: 3px solid #f0ad4e;
-}
-
-/* DERNIERE ACTU */
-
-.derniereactu {
-  background-color: #DDDDDD;
-  font-size: 30px;
-  border: 1px dotted gray;
-}
-   
-
-
-
-@media screen and (max-width: 767px){ /* On cache le menu pour les mobiles et petits périphériques */
-   .premierbloc{
-     padding-top: 70px;
-    }
 }
 
 
@@ -148,54 +95,19 @@ body {
   font-size: 1.1em;
 }
 
-footer {
-  /* Set the fixed height of the footer here */
-  padding: 20px 0;
-}
-
 .carousel img {
 	width: 100%;
 	height: auto;
 
 }
 
-/* Grow */
-.hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+/* Création de couleurs pour utilisation bandeaux */
+
+.vert {
+  background-color: #8d9683;
 }
 
-/* Shrink */
-.hvr-shrink {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+.mauve {
+  background-color: #b1877b;
 }
-.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-}
-}
+
