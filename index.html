@@ -8,6 +8,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/effets.css" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
@@ -27,17 +28,15 @@
 		    <div class="collapse navbar-collapse">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="#accueil"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
-		        <li><a href="#qui">Actualités</a></li>
-		        <li><a href="#contact">Plus d'infos</a></li>
-		        <li><a href="#contact">Activité du mois</a></li>
-		        <li><a href="#contact">Contact</a></li>
+		        <li><a href="#qui" data-toggle="collapse" data-target=".navbar-collapse.in">Actualités</a></li>
+		        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Plus d'infos</a></li>
+		        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Activité du mois</a></li>
+		        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="form">
 		        <div class="input-group">
-		          <input type="text" style="width:120px" class="input-sm form-control" placeholder="Recherche">
-		            <span class="input-group-btn">
-		              <button type="submit" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-search"></span> </button>
-		            </span>
+		          <input type="search" style="width:120px" class="input-sm form-control" placeholder="Recherche">
+		          <button type="submit" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-search"></span> </button>
 		        </div>
 		      </form>
 		    </div>
@@ -128,7 +127,7 @@
 
 
       <!-- /END THE FEATURETTES -->
-<div class="vert">
+<div class="gris">
     <div class="container bloc">
     <h2 class="titre-bloc">Photos du village</h2>
       <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -200,22 +199,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!-- Javascript de Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  <script>
-  //  $(document).ready(function () {
-  //    $('#block').vide('video/test'); // Non declarative initialization
-  //
-  //    var instance = $('#block').data('vide'); // Get the instance
-  //    var video = instance.getVideoObject(); // Get the video object
-  //    instance.destroy(); // Destroy instance
-  //
-  //    $('#block2').vide({
-  //      'mp4': 'video/test',
-  //      'webm': 'video/test',
-  //      'ogv': 'video/test',
-  //      'poster': 'video/test',
-  //    });
-  //  });
-  </script>
+
 
 
 
