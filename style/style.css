@@ -3,19 +3,14 @@ body {
     background-color: #f8f8f8;
 }
 
-.bleu {
-  background-color: #455A64;
+.vert {
+  background-color: #8d9683;
 }
 
-.rouge {
-  background-color: #D32F2F;
+.mauve {
+  background-color: #b1877b;
 }
 
-.carousel-inner img
-{
-  width: 100%;
-  height: auto;
-}
 
 .bloclien
 {
@@ -41,12 +36,11 @@ body {
   transition-property: color, background-color;
 }
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  background-color: #2098d1;
+  background-color: #f0ad4e;
   color: white;
 }
 
 .bloc {
-  border-bottom: 1px dotted gray;
   padding-top: 5px;
   padding-bottom: 20px;
 }
@@ -58,7 +52,6 @@ body {
         align-items: center;  
     }
     .bloc {
-  border-bottom: 1px dotted gray;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -102,18 +95,20 @@ body {
 
 
 .navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:hover,
 .navbar-default .navbar-nav a:hover {
   color: #555;
   background-color: rgba(255,255,255,0);
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #f0ad4e;
 }
 
 .navbar-default {
   background-color: #f8f8f8;
-  border-color: red;
 }
 
+.btn-primary, .btn-primary:hover	 {
 
+}
 
 
 /* BLOCS TEXTES */
@@ -122,7 +117,10 @@ body {
 
 .bloc-texte {
   letter-spacing: -1px;
-  font-size: 50px;
+  font-size: 3em;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  border-left: 3px solid #f0ad4e;
 }
 
 /* DERNIERE ACTU */
@@ -150,13 +148,14 @@ body {
   font-size: 1.1em;
 }
 
-.footer {
+footer {
   /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+  padding: 20px 0;
 }
 
 .carousel img {
+	width: 100%;
+	height: auto;
 
 }
 
