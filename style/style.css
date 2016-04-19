@@ -48,6 +48,9 @@ mais plusieurs blocs peuvent se trouver dans un container */
   padding-bottom: 20px;
 }
 
+.bloc-lien a {
+	color: black;
+}
 /* Ajout d'un padding en mode mobile pour que le texte ne soit pas caché par le menu fixe */
 
 @media screen and (max-width: 767px){ 
@@ -94,9 +97,8 @@ les blocs sont plus grandes */
   margin-bottom: 20px;
   padding-left: 30px;
   border-left: 3px solid #f0ad4e;
+  
 }
-
-
 
 .date {
   font-weight: bold;
