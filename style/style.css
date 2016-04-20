@@ -87,13 +87,13 @@ les blocs sont plus grandes */
 
 @media screen and (min-width: 768px) and (max-width: 992px){ 
    .premierbloc{
-     padding-top: 130px;
+     padding-top: 150px;
     }
 }
 
 @media screen and (min-width: 993px){ 
    .premierbloc{
-     padding-top: 70px;
+     padding-top: 100px;
     }
 }
 /* Style pour les blocs de liens dans l'accueil */
@@ -134,9 +134,17 @@ les blocs sont plus grandes */
 
 .gris {
   background-color: #ababab;
+  color:#EFEFEF;
+
 }
 
 .mauve {
   background-color: #b1877b;
+  color:#EFEFEF;
 }
 
+
+footer
+{
+  border-top: 1px dotted gray;
+}
