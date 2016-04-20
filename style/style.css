@@ -51,13 +51,7 @@ mais plusieurs blocs peuvent se trouver dans un container */
 .bloc-lien a {
 	color: black;
 }
-/* Ajout d'un padding en mode mobile pour que le texte ne soit pas caché par le menu fixe */
 
-@media screen and (max-width: 767px){ 
-   .premierbloc{
-     padding-top: 70px;
-    }
-}
 
 /* A partir des écrans medium et plus, on centre verticalement blocs liens et textes, et les marges entre
 les blocs sont plus grandes */
@@ -78,6 +72,30 @@ les blocs sont plus grandes */
 	}
 }
 
+/* Ajout d'un padding en mode mobile pour que le texte ne soit pas caché par le menu fixe */
+@media screen and (max-width: 767px){ 
+   .premierblocaccueil{
+     padding-top: 70px;
+    }
+}
+
+@media screen and (max-width: 767px){ 
+   .premierbloc{
+     padding-top: 70px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ 
+   .premierbloc{
+     padding-top: 130px;
+    }
+}
+
+@media screen and (min-width: 993px){ 
+   .premierbloc{
+     padding-top: 70px;
+    }
+}
 /* Style pour les blocs de liens dans l'accueil */
 
 .bloc-lien
