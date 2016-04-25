@@ -133,7 +133,7 @@ les blocs sont plus grandes */
 /* Création de couleurs pour utilisation bandeaux */
 
 .gris {
-  background-color: #5A5E6B;
+  background-color: #798081;
   color: white;
 
 }
@@ -154,8 +154,13 @@ footer
 }
 
 .activite {
-  padding-bottom: 20px;
-  border-top: 1px dotted gray;
+  padding: 10px 30px;
+}
+
+.activite h2{
+  margin-bottom: 30px;
+  text-decoration: underline;
+  letter-spacing: -1px;
 }
 
 
