@@ -133,14 +133,14 @@ les blocs sont plus grandes */
 /* Création de couleurs pour utilisation bandeaux */
 
 .gris {
-  background-color: #ababab;
-  color:#EFEFEF;
+  background-color: #5A5E6B;
+  color: white;
 
 }
 
 .mauve {
   background-color: #b1877b;
-  color:#EFEFEF;
+  color: white;
 }
 
 
@@ -161,8 +161,8 @@ footer
 
 
 .prix {
-    background-color: rgb(249, 89, 58);
-    color: rgb(255, 255, 255);
+    background-color:#f0ad4e;
+    color: white;
     padding: 7px 10px;
 }
 
@@ -171,4 +171,9 @@ footer
   text-transform:uppercase;
   display: inline-block;
   margin-bottom: 20px;
+}
+
+
+.table-hover > tbody > tr:hover {
+  background-color: #dddddd;
 }
