@@ -15,7 +15,7 @@
 <body id="page-top">
 
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"  id="topnavbar">
+    <nav class="navbar navbar-default navbar-fixed-top" id="topnavbar">
       <div class="container">   
         <div class="navbar-header">   
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -33,7 +33,7 @@
             <li><a href="activite.html" data-toggle="collapse" data-target=".navbar-collapse.in">Activité du mois</a></li>
             <li class="active"><a href="contact.html" data-toggle="collapse" data-target=".navbar-collapse.in">Contact</a></li>
           </ul>
-          <form class="navbar-form navbar-right" role="form">
+          <form class="navbar-form navbar-right">
             <div class="input-group">
               <input type="search" style="width:120px" class="input-sm form-control" placeholder="Recherche">
               <button type="submit" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-search"></span> </button>
@@ -51,10 +51,7 @@
 <fieldset>
 
 	<div class="form-group">
-		<!-- Form Name -->
-		<legend></legend>
 
-		<!-- Text input-->
 		<div class="row">
 			<div class="form-group">
 			  <label class="col-md-2 control-label" for="titre">Titre du message</label>  
@@ -64,7 +61,6 @@
 			</div>
 		</div>
 
-		<!-- Text input-->
 		<div class="row">
 			<div class="form-group">		
 			  <label class="col-md-2 control-label" for="nom">Nom</label>  
@@ -97,7 +93,7 @@
 			<div class="form-group">
 				<label class="col-md-2 control-label" for="res">Résident du village</label>
 				<div class="col-md-6">
-					<input type="checkbox" id="res" /> <label for="huitres"></label>
+					<input type="checkbox" id="res" />
 				</div>
 			</div>
 		</div>
@@ -352,7 +348,7 @@
 
 		<div class="row">
 			<div class="col-md-6 col-md-offset-2 text-right">
-				<button class="btn btn-primary" type="submit">Envoyer</button>
+				<button class="btn btn-warning" type="submit">Envoyer</button>
 			</div>
 		</div>	
 
@@ -416,7 +412,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Javascript de Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
+<!-- Gestion du Popover -->
 <script type="text/javascript">
 $(function (){
    $("#date").popover();
