@@ -73,10 +73,10 @@
 	          <p class="lead">Vous pourrez trouver sur le site les dernières "actualités" du village. Dans "plus d'infos", vous retrouverez les activités sportives et culturelles que nous vous proposons. La page "activités du mois" liste les activités à venir, n'hésitez pas à vous y inscrire! Vous pouvez également nous contacter grâge à l'onglet contact, nous nous ferons un plaisir de répondre à vos questions.</p>
 	        </div>
 	        <div class="col-xs-12 col-md-5 text-center">
-					<div class="col-xs-5 bloc-lien hvr-fade"><a href="#"> Actualités</a></div>
-					<div class="col-xs-5 col-xs-offset-2 bloc-lien hvr-fade"><a href="#">Plus d'infos</a></div>
-					<div class="col-xs-5 bloc-lien hvr-fade"><a href="#">Activité du mois</a></div>
-					<div class="col-xs-5 col-xs-offset-2 bloc-lien hvr-fade"><a href="#">Contact</a></div>
+					<div class="col-xs-5 bloc-lien hvr-fade"><a href="actualite.html"> Actualités</a></div>
+					<div class="col-xs-5 col-xs-offset-2 bloc-lien hvr-fade"><a href="info.html">Plus d'infos</a></div>
+					<div class="col-xs-5 bloc-lien hvr-fade"><a href="activite.html">Activité du mois</a></div>
+					<div class="col-xs-5 col-xs-offset-2 bloc-lien hvr-fade"><a href="contact.html">Contact</a></div>
 	        </div>
 	    </div>
 	</div>
@@ -88,42 +88,51 @@
 	<div class="row"> 
      	<div class="col-sm-4 col-md-4">
 			<article>
-				<a href="#">
+				<a href="#myModal" data-toggle="modal" data-load-remote="news/news1.html" data-remote-target="#myModal .modal-content">
 					<div class="visuel">
 						<img class="img-responsive hvr-grow" src="img/vign_1.jpg" alt="vign_1" />				
 					</div>
 					<h3>Consultation sur le projet éducatif de territoire</h3>
 				</a>
-    				<p class="date">Publiée le mardi 19 avril 2016</p>
+    				 <p>Publiée le <span class="date">mardi 19 avril 2016</span>, par <span class="auteur">Olbreuse</span></p>
 				    <p>La Ville d'Olbreuse actualise son Projet éducatif territorial 2013-2016. Pour cela, elle réinterroge les familles et l’ensemble des acteurs scolaires et périscolaires&nbsp;...</p>
 			</article>
 		</div>
 		<div class="col-sm-4 col-md-4">
 			<article>
-				<a href="#">
+				<a href="#myModal" data-toggle="modal" data-load-remote="news/news2.html" data-remote-target="#myModal .modal-content">
 					<div class="visuel">
 					<img class="img-responsive hvr-grow" src="img/vign_2.jpg" alt="vign_2" />				
 					</div>
 					<h3>L'écluse du Marais Pin se refait une beauté</h3>
 				</a>
-				<p class="date">Publiée le mercredi 06 avril 2016</p>
+				<p>Publiée le <span class="date">mercredi 06 avril 2016</span>, par <span class="auteur">Olbreuse</span></p>
 				<p>Le  chantier de restauration de l’écluse du Marais Pin se poursuit. Cet ouvrage est l'un des 16 permettant la navigation entre l'océan et Niort&nbsp;...</p>
 			</article>
 		</div>
 		<div class="col-sm-4 col-md-4">
 			<article>
-				<a href="#">
+				<a href="#myModal" data-toggle="modal" data-load-remote="news/news3.html" data-remote-target="#myModal .modal-content">
 					<div class="visuel">
 					<img class="img-responsive hvr-grow" src="img/vign_3.jpg" alt="vign_3" />				
 					</div>
 					<h3>L’éveil musical, c’est bon pour le moral</h3>
 				</a>
-				<p class="date">Publiée le jeudi 24 mars 2016</p>
+				<p>Publiée le <span class="date">jeudi 24 mars 2016</span>, par <span class="auteur">Olbreuse</span></p>
 				<p>Après la classe ou sur la pause méridienne, les temps d’activités périscolaires (TAP) organisées par la Ville incluent l’éveil musical&nbsp;...</p>
 			</article>
 		</div>
     </div>
 </div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+    
+      </div>
+    </div>
+  </div>
 
 
       <!-- /END THE FEATURETTES -->
@@ -199,6 +208,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <!-- Javascript de Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- Script pour envoyer chachun des articles au même modal -->
+  <script type='text/javascript'>//<![CDATA[ 
+    $(window).load(function(){
+    $('[data-load-remote]').on('click',function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var remote = $this.data('load-remote');
+        if(remote) {
+            $($this.data('remote-target')).load(remote);
+        }
+    });
+
+    $('#openBtn').click(function(){
+      $('#myModal').modal({show:true})
+    });
+
+    });//]]>  
+
+</script>
 
 
 
