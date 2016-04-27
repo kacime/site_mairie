@@ -118,10 +118,6 @@ les blocs sont plus grandes */
   
 }
 
-.date, .auteur {
-  font-weight: bold;
-}
-
 .carousel img {
   width: 100%;
   height: auto;
@@ -175,4 +171,11 @@ footer
 
 .table-hover > tbody > tr:hover {
   background-color: #dddddd;
+}
+
+
+
+.date, .auteur {
+    font-weight: 900 !important;
+    -webkit-font-smoothing: antialiased;
 }
